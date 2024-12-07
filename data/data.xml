@@ -1,0 +1,20 @@
+<odoo>
+    <record id="kota_malang" model="siswa.kota">
+        <field name="name">Malang</field>
+    </record>
+    <record id="kota_blitar" model="siswa.kota">
+        <field name="name">Blitar</field>
+    </record>
+    <record id="kota_kepanjen" model="siswa.kota">
+        <field name="name">Kepanjen</field>
+    </record>
+    <record id="kota_lawang" model="siswa.kota">
+        <field name="name">Lawang</field>
+    </record>
+    <record id="kota_pakis" model="siswa.kota">
+        <field name="name">Pakis</field>
+    </record>
+    <record id="kota_singosari" model="siswa.kota">
+        <field name="name">Singosari</field>
+    </record>
+</odoo>

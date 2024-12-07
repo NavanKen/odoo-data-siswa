@@ -1,0 +1,12 @@
+<odoo>
+    <record id="view_kota_graph" model="ir.ui.view">
+        <field name="name">jurusan.graph</field>
+        <field name="model">siswa_property</field>
+        <field name="arch" type="xml">
+            <graph string="Jumlah Siswa Berdasarkan jurusan" type="bar">
+                <field name="jurusan_id"/>
+                <field name="id" name="count"/>
+            </graph>
+        </field>
+    </record>
+</odoo>

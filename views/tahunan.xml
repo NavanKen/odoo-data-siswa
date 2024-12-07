@@ -1,0 +1,12 @@
+<odoo>
+    <record id="view_tahunan_graph" model="ir.ui.view">
+        <field name="name">tahunan.graph</field>
+        <field name="model">siswa_property</field>
+        <field name="arch" type="xml">
+            <graph string="Jumlah Siswa per Tahun" type="bar">
+                <field name="tahun_lahir" type="integer"/>
+                <field name="id" name="count"/>
+            </graph>
+        </field>
+    </record>
+</odoo>

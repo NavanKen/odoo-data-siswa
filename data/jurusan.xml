@@ -1,0 +1,20 @@
+<odoo>
+    <record id="Rpl" model="siswa.jurusan">
+        <field name="name">Rpl</field>
+    </record>
+    <record id="Tkj" model="siswa.jurusan">
+        <field name="name">Tkj</field>
+    </record>
+    <record id="Metro" model="siswa.jurusan">
+        <field name="name">Metro</field>
+    </record>
+    <record id="Elin" model="siswa.jurusan">
+        <field name="name">Elin</field>
+    </record>
+    <record id="Multimedia" model="siswa.jurusan">
+        <field name="name">Multimedia</field>
+    </record>
+    <record id="Animasi" model="siswa.jurusan">
+        <field name="name">Animasi</field>
+    </record>
+</odoo>

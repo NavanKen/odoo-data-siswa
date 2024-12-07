@@ -1,0 +1,62 @@
+<odoo>
+    <record id="estate_property_action" model="ir.actions.act_window">
+        <field name="name">Data Siswa</field>
+        <field name="res_model">siswa_property</field>
+        <field name="view_mode">tree,form,kanban</field>
+    </record>
+
+    <record id="grafik_tahunan_action" model="ir.actions.act_window">
+        <field name="name">Grafik Berdasarkan Kelahiran</field>
+        <field name="res_model">siswa_property</field>
+        <field name="view_mode">graph,tree</field>
+        <field name="views">[(4, ref('Data-Siswa.view_tahunan_graph'))]</field>
+        <field name="context">{'group_by': 'tahun_lahir'}</field>
+    </record>
+
+    <record id="grafik_kota_action" model="ir.actions.act_window">
+        <field name="name">Grafik Berdasarkan Kota</field> 
+        <field name="res_model">siswa_property</field>
+        <field name="view_mode">graph,tree</field>
+        <field name="views">[(4, ref('Data-Siswa.view_kota_graph'))]</field>
+        <field name="context">{'group_by': 'kota_id'}</field>
+    </record>
+
+    <record id="grafik_jurusan_action" model="ir.actions.act_window">
+        <field name="name">Grafik Berdasarkan Jurusan</field>
+        <field name="res_model">siswa_property</field>
+        <field name="view_mode">graph,tree</field>
+        <field name="views">[(4, ref('Data-Siswa.view_jurusan_graph'))]</field>
+        <field name="context">{'group_by': 'jurusan_id'}</field>
+    </record>
+
+
+    <menuitem id="estate_menu_root" name="Data Aplikasi" sequence="0"/>
+
+    <menuitem 
+        id="estate_property_menu_action" 
+        name="Data Siswa"
+        parent="estate_menu_root"
+        action="estate_property_action"
+    />
+
+    <menuitem 
+        id="grafik_tahunan_menu" 
+        name="Grafik Kelahiran"
+        parent="estate_menu_root"
+        action="grafik_tahunan_action"
+    />
+
+    <menuitem 
+        id="grafik_kota_menu" 
+        name="Grafik Kota" 
+        parent="estate_menu_root"
+        action="grafik_kota_action"
+    />
+
+        <menuitem 
+        id="grafik_jurusan_menu" 
+        name="Grafik Jurusan"
+        parent="estate_menu_root"
+        action="grafik_jurusan_action"
+    />
+</odoo>
